@@ -70,6 +70,30 @@ The reusable template lives in `templates/project-init/` and includes:
 4. Keep `WORKFLOW.md` and `STYLE_GUIDE.md` aligned with how the team actually works.
 5. Update the relevant documents whenever a major change lands.
 
+## Standard Codex Opening Prompt
+
+When starting a new project with Codex, paste this at the beginning of the first working session:
+
+```text
+First read README.md, PROJECT.md, ARCHITECTURE.md, DECISIONS.md, TODO.md, API.md, DATABASE.md, STYLE_GUIDE.md, WORKFLOW.md, and PROMPTS.md before making changes.
+
+Treat those files as the source of truth for long-lived project facts.
+
+While working:
+- prefer minimal maintainable changes
+- do not modify unrelated code
+- call out conflicts between code and docs
+- after major changes, update any affected project documents
+
+If documentation is missing or stale, fix it as part of the work instead of leaving the project state ambiguous.
+```
+
+Why this helps:
+
+- it tells Codex where project memory lives
+- it reduces dependence on long chat history
+- it encourages code and docs to stay aligned
+
 ## Usage Pattern
 
 Use repository documents for long-lived facts:
@@ -94,6 +118,7 @@ See `examples/example-web-app/` for a generic filled example showing what the te
 
 - [docs/philosophy.md](./docs/philosophy.md)
 - [docs/workflow.md](./docs/workflow.md)
+- [docs/use-cases.md](./docs/use-cases.md)
 
 ## License
 
