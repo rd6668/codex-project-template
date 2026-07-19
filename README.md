@@ -4,6 +4,8 @@ An AI-first project documentation template for long-running software projects.
 
 This repository is designed for teams and solo builders who use tools like ChatGPT, Codex, Claude, and Cursor during development and want project knowledge to live in the repository instead of being trapped in chat history.
 
+![codex-project-template overview](./codex-project-template.png)
+
 ## Why This Exists
 
 Most project templates focus on code layout.
